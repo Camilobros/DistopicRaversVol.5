@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Distopic Ravers | Underground Cyberpunk Rave</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts: Permanent Marker (Grafiti) & Rajdhani (Cyberpunk/Industrial) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+<body class="bg-grunge min-h-screen selection:bg-yellow-400 selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-black/90 backdrop-blur-md border-b border-yellow-400/30 sticky top-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <!-- Icono Calavera Sonriente -->
+      <div class="w-8 h-8 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600]">
+        <i class="fas fa-skull text-sm"></i>
+      </div>
+      <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">DISTOPIC</span>
+    </div>
+
+    <!-- Links de Navegación -->
+    <nav class="hidden md:flex gap-8 text-xs font-rave tracking-widest uppercase font-bold">
+      <a href="#inicio" class="text-yellow-400 border-b-2 border-yellow-400 pb-0.5 glow-yellow">Inicio</a>
+      <a href="#eventos" class="hover:text-yellow-400 transition">Eventos</a>
+      <a href="#cultura" class="hover:text-yellow-400 transition">Cultura</a>
+      <a href="#tienda" class="hover:text-yellow-400 transition">Tienda</a>
+      <a href="#pelicula" class="hover:text-yellow-400 transition">Película</a>
+      <a href="#funding" class="hover:text-yellow-400 transition">Funding</a>
+    </nav>
+
+    <!-- Menú Hamburguesa / Botón de Acción -->
+    <div class="flex items-center gap-3">
+      <button class="md:hidden text-yellow-400 text-2xl hover:scale-110 transition">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="max-w-4xl mx-auto px-4 py-8">
+
+    <!-- HERO / TÍTULO PRINCIPAL (Estilo Grafiti) -->
+    <div class="text-center my-8 md:my-14 relative">
+      <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+      
+      <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Techno · Acid · Industrial</p>
+      
+      <h1 class="font-graffiti text-5xl sm:text-7xl md:text-8xl text-yellow-400 uppercase tracking-wide leading-none glow-yellow transform -rotate-1 select-none">
+        Distopic  x  D|E<br>Ravers    DRUM ENIGMA
+      </h1>
+      
+      <p class="text-zinc-500 font-rave text-sm tracking-widest uppercase mt-3">Power to the people</p>
+    </div>
+
+    <!-- SECCIÓN DE 6 CATEGORÍAS (Tarjetas Amarillas) -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 my-10">
+      
+      <!-- 1. Festival Free Rave -->
+      <a href="#festival" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-smile text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Festival<br>Free Rave</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <!-- 2. Distópicos Unidos -->
+      <a href="#comunidad" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-handshake text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Distópicos<br>Unidos</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <!-- 3. Merchandise -->
+      <a href="#tienda" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-tshirt text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Merchandise</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <!-- 4. Cultura Distopic -->
+      <a href="#cultura" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-eye text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Cultura<br>Distopic</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <!-- 5. Distopic La Película -->
+      <a href="#pelicula" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-film text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Distopic<br>La Película</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+
+      <!-- 6. Funding The Rave -->
+      <a href="#funding" class="border-glow bg-black/75 p-4 rounded-lg flex flex-col items-center justify-between text-center group transition duration-200">
+        <i class="fas fa-hand-holding-heart text-3xl text-yellow-400 mb-3 group-hover:scale-110 transition"></i>
+        <span class="font-rave font-bold text-xs uppercase leading-tight tracking-wider">Funding<br>The Rave</span>
+        <span class="text-yellow-400 font-bold mt-3 group-hover:translate-x-1 transition">→</span>
+      </a>
+    </div>
+
+    <!-- BANNER DE EVENTO: HALLOWEEN FREE RAVE -->
+    <div class="relative border-2 border-yellow-400 rounded-xl p-6 md:p-8 bg-gradient-to-r from-yellow-950/40 via-black to-yellow-950/20 shadow-[0_0_20px_rgba(255,230,0,0.25)] my-12 overflow-hidden">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 relative z-10">
+        <div>
+          <span class="text-xs uppercase tracking-widest bg-yellow-400 text-black font-bold px-2 py-0.5 rounded font-rave">
+            Próximo Encuentro
+          </span>
+          <h2 class="font-graffiti text-4xl sm:text-5xl text-yellow-400 glow-yellow mt-2 leading-tight">
+            Halloween Free Rave
+          </h2>
+          <p class="font-rave text-zinc-300 text-sm tracking-wider uppercase mt-1">
+            Music · People · Freedom
+          </p>
+        </div>
+
+        <!-- Fecha y Llamado -->
+        <div class="flex items-center gap-4 bg-black/80 border border-yellow-400/50 p-4 rounded-lg">
+          <div class="text-right">
+            <p class="text-xs text-zinc-400 uppercase font-rave">Fecha Confirmada</p>
+            <p class="text-2xl font-bold font-rave text-yellow-400">30 OCT</p>
+          </div>
+          <a href="#entradas" class="bg-yellow-400 text-black font-rave font-extrabold text-sm uppercase px-5 py-3 rounded hover:bg-yellow-300 transition shadow-[0_0_10px_#FFE600]">
+            Confirmar Asistencia
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILA INFERIOR: RAVE BOT PLAYER + CALLOUT -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center my-10">
+      
+      <!-- REPRODUCTOR "RAVE BOT" -->
+      <div id="raveBotCard" class="border-glow bg-black/90 p-5 rounded-xl">
+        <div class="flex items-center justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600]">
+              <i class="fas fa-headphones text-base"></i>
+            </div>
+            <div>
+              <h3 class="font-rave font-bold text-yellow-400 text-base tracking-wider flex items-center gap-2">
+                RAVE BOT ⚡ <span id="statusTag" class="text-[9px] bg-zinc-800 text-zinc-300 px-1.5 py-0.5 rounded uppercase">Pausado</span>
+              </h3>
+              <p class="text-[11px] text-zinc-400 tracking-wider font-rave">MÚSICA 24/7 · VIBRAS SIN FIN</p>
+            </div>
+          </div>
+          <!-- Barras animadas de ecualizador -->
+          <div id="equalizer" class="flex items-end gap-1 h-6">
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+            <div class="eq-bar"></div>
+          </div>
+        </div>
+
+        <!-- Controles de Audio -->
+        <div class="flex items-center justify-center gap-6 my-3">
+          <button class="text-zinc-400 hover:text-yellow-400 transition text-lg"><i class="fas fa-backward-step"></i></button>
+          <button id="playBtn" class="w-12 h-12 rounded-full bg-yellow-400 text-black flex items-center justify-center text-xl font-bold shadow-[0_0_15px_#FFE600] hover:scale-105 active:scale-95 transition">
+            <i id="playIcon" class="fas fa-play ml-0.5"></i>
+          </button>
+          <button class="text-zinc-400 hover:text-yellow-400 transition text-lg"><i class="fas fa-forward-step"></i></button>
+        </div>
+
+        <div class="text-center mt-3 pt-3 border-t border-zinc-800">
+          <p class="text-[10px] text-zinc-400 uppercase tracking-widest font-rave">
+            Now Playing: <span class="text-yellow-400 font-bold">Acid Underground Stream #01</span>
+          </p>
+        </div>
+
+        <!-- Audio Tag (Stream Techno Libre de Derechos) -->
+        <audio id="audioPlayer" src="https://stream.zeno.fm/4wv428v298zuv" preload="none"></audio>
+      </div>
+
+      <!-- BANNER COMUNIDAD / MASCOTA -->
+      <div class="border-2 border-dashed border-yellow-400/70 rounded-xl p-8 text-center bg-black/60 flex flex-col items-center justify-center h-full">
+        <div class="text-3xl text-yellow-400 mb-2">🖤</div>
+        <h4 class="font-graffiti text-3xl text-yellow-400 glow-yellow transform -rotate-2">
+          ¡Nos vemos en la Rave!
+        </h4>
+        <p class="font-rave text-zinc-400 text-xs uppercase tracking-widest mt-2">
+          Comunidad libre · Caos creativo
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER / SECCIÓN DE CONTACTO -->
+  <footer class="border-t-2 border-yellow-400 bg-black/95 py-8 px-4 mt-16">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Marca de Contacto -->
+      <div>
+        <h5 class="font-graffiti text-3xl text-yellow-400 tracking-wider leading-none">Contacto</h5>
+        <p class="font-rave text-xs text-zinc-400 tracking-widest uppercase mt-1">Sé parte del caos creativo</p>
+      </div>
+
+      <!-- Email -->
+      <div class="text-center md:text-left">
+        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-rave">Correo Electrónico</p>
+        <a href="mailto:info@distopicravers.com" class="text-yellow-400 font-rave font-bold hover:underline">
+          info@distopicravers.com
+        </a>
+      </div>
+
+      <!-- Redes Sociales -->
+      <div class="flex items-center gap-5 text-xl text-yellow-400">
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-tiktok"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Botón WhatsApp -->
+      <a href="https://wa.me/573001234567" target="_blank" class="flex items-center gap-2.5 border border-yellow-400 px-4 py-2 rounded-lg text-yellow-400 font-rave font-bold uppercase tracking-wider hover:bg-yellow-400 hover:text-black transition shadow-[0_0_10px_rgba(255,230,0,0.2)]">
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>WhatsApp</span>
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- SCRIPT PARA EL REPRODUCTOR RAVE BOT -->
+  <script>
+    const playBtn = document.getElementById('playBtn');
+    const playIcon = document.getElementById('playIcon');
+    const audio = document.getElementById('audioPlayer');
+    const equalizer = document.getElementById('equalizer');
+    const statusTag = document.getElementById('statusTag');
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playIcon.classList.remove('fa-play');
+        playIcon.classList.add('fa-pause');
+        equalizer.classList.add('playing');
+        statusTag.textContent = 'En Vivo';
+        statusTag.classList.remove('bg-zinc-800', 'text-zinc-300');
+        statusTag.classList.add('bg-yellow-400', 'text-black');
+      } else {
+        audio.pause();
+        playIcon.classList.remove('fa-pause');
+        playIcon.classList.add('fa-play');
+        equalizer.classList.remove('playing');
+        statusTag.textContent = 'Pausado';
+        statusTag.classList.remove('bg-yellow-400', 'text-black');
+        statusTag.classList.add('bg-zinc-800', 'text-zinc-300');
+      }
+    });
+  </script>
+
+</body>
+</html>
