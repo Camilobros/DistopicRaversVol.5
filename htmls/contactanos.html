@@ -151,24 +151,38 @@
                     <p id="formStatus" class="text-xs font-rave text-center uppercase tracking-widest mt-2 hidden"></p>
                 </form>
 
+                
                 <!-- Modal emergente para notificar al segundo número -->
                 <div id="modalWhatsapp"
-                    class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-                    <div class="border-glow bg-black p-6 rounded-xl max-w-sm w-full text-center space-y-4">
+                    class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+                    <div class="border-glow bg-black p-6 rounded-xl max-w-sm w-full text-center space-y-4 relative">
+
                         <i class="fab fa-whatsapp text-4xl text-green-400"></i>
                         <h3 class="font-rave font-bold text-lg text-yellow-400">¡Mensaje Transmitido!</h3>
-                        <p class="text-xs text-zinc-300 font-sans">El correo fue enviado. Si deseas confirmar
-                            inmediatamente por WhatsApp con los organizadores, elige uno de los números:</p>
+
+                        <p class="text-xs text-zinc-300 font-sans">
+                            Tu correo fue enviado con éxito. Si deseas confirmarlo inmediatamente vía WhatsApp con los
+                            organizadores, elige una de las líneas:
+                        </p>
+
+                        <!-- Botones de WhatsApp opcionales -->
                         <div class="space-y-2">
                             <a id="linkWp1" target="_blank" rel="noopener noreferrer"
-                                class="block w-full py-2 px-3 border border-yellow-400 text-yellow-400 rounded font-rave font-bold text-xs uppercase hover:bg-yellow-400 hover:text-black transition">WhatsApp
-                                1 (314 241 8909)</a>
+                                class="block w-full py-2.5 px-3 border border-yellow-400 text-yellow-400 rounded font-rave font-bold text-xs uppercase hover:bg-yellow-400 hover:text-black transition">
+                                Línea 1 (320 494 8048)
+                            </a>
                             <a id="linkWp2" target="_blank" rel="noopener noreferrer"
-                                class="block w-full py-2 px-3 border border-red-500 text-red-400 rounded font-rave font-bold text-xs uppercase hover:bg-red-500 hover:text-white transition">WhatsApp
-                                2 (320 494 8048)</a>
+                                class="block w-full py-2.5 px-3 border border-red-500 text-red-400 rounded font-rave font-bold text-xs uppercase hover:bg-red-500 hover:text-white transition">
+                                Línea 2 (314 241 8909)
+                            </a>
                         </div>
-                        <button onclick="document.getElementById('modalWhatsapp').classList.add('hidden')"
-                            class="text-[11px] text-zinc-500 underline mt-2 block mx-auto font-rave uppercase">Cerrar</button>
+
+                        <!-- Botón para cerrar -->
+                        <button type="button" id="closeModalBtn"
+                            class="text-xs text-zinc-400 hover:text-white underline mt-3 block mx-auto font-rave uppercase transition">
+                            No, solo por correo (Cerrar)
+                        </button>
+
                     </div>
                 </div>
             </section>
