@@ -33,11 +33,11 @@
     <!-- Links de Navegación -->
     <nav class="hidden md:flex gap-8 text-xs font-rave tracking-widest uppercase font-bold">
       <a href="#inicio" class="text-yellow-400 border-b-2 border-yellow-400 pb-0.5 glow-yellow">Inicio</a>
-      <a href="#eventos" class="hover:text-yellow-400 transition">Eventos</a>
+      <a href="#eventos" class="hover:text-yellow-400 transition">Evento</a>
       <a href="#cultura" class="hover:text-yellow-400 transition">Cultura</a>
       <a href="#tienda" class="hover:text-yellow-400 transition">Tienda</a>
-      <a href="#pelicula" class="hover:text-yellow-400 transition">Película</a>
-      <a href="#funding" class="hover:text-yellow-400 transition">Funding</a>
+      <a href="#contactanos" class="hover:text-yellow-400 transition">Contactanos</a>
+      <a href="#quienesSomos" class="hover:text-yellow-400 transition">Quienes somos</a>
     </nav>
 
     <!-- Menú Hamburguesa / Botón de Acción -->
@@ -52,17 +52,34 @@
   <main class="max-w-4xl mx-auto px-4 py-8">
 
     <!-- HERO / TÍTULO PRINCIPAL (Estilo Grafiti) -->
-    <div class="text-center my-8 md:my-14 relative">
-      <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
-      
-      <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Techno · Acid · Industrial</p>
-      
-      <h1 class="font-graffiti text-5xl sm:text-7xl md:text-8xl text-yellow-400 uppercase tracking-wide leading-none glow-yellow transform -rotate-1 select-none">
-        Distopic  x  D|E<br>Ravers    DRUM ENIGMA
-      </h1>
-      
-      <p class="text-zinc-500 font-rave text-sm tracking-widest uppercase mt-3">Power to the people</p>
-    </div>
+    <!-- HERO / TÍTULO PRINCIPAL -->
+<div class="text-center my-8 md:my-14 relative">
+  <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+  
+  <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-4">Techno · Acid · Industrial</p>
+  
+  <!-- Contenedor Flex simétrico -->
+  <h1 class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6 font-graffiti text-5xl sm:text-6xl md:text-7xl uppercase tracking-wide transform -rotate-1 select-none">
+    
+    <!-- Lado Izquierdo: DISTOPIC RAVERS -->
+    <span class="text-yellow-400 glow-yellow text-center md:text-right leading-none block">
+      DISTOPIC<br>RAVERS
+    </span>
+
+    <!-- Conector central -->
+    <span class="text-2xl sm:text-3xl md:text-4xl text-zinc-400 font-rave font-bold py-1">
+      ✕
+    </span>
+
+    <!-- Lado Derecho: DRUM ENIGMA -->
+    <span class="text-red-500 drop-shadow-[0_0_15px_rgba(239,68,68,0.85)] text-center md:text-left leading-none block">
+      DRUM<br>ENIGMA
+    </span>
+
+  </h1>
+  
+  <p class="text-zinc-500 font-rave text-sm tracking-widest uppercase mt-5">Power to the people</p>
+</div>
 
     <!-- SECCIÓN DE 6 CATEGORÍAS (Tarjetas Amarillas) -->
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 my-10">
