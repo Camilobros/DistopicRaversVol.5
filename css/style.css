@@ -61,3 +61,22 @@
     .playing .eq-bar:nth-child(5) { animation: bounceBar 0.8s infinite ease-in-out 0.05s; }
     .playing .eq-bar:nth-child(6) { animation: bounceBar 0.45s infinite ease-in-out 0.25s; }
     .playing .eq-bar:nth-child(7) { animation: bounceBar 0.65s infinite ease-in-out 0.3s; }
+
+    /* Animación de parpadeo eléctrico de neón */
+@keyframes neon-flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    opacity: 1;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #facc15, 0 0 30px #ef4444;
+  }
+  20%, 24%, 55% {
+    opacity: 0.2;
+    color: #52525b;
+    text-shadow: none;
+  }
+}
+
+.neon-flicker {
+  animation: neon-flicker 2.5s infinite;
+  display: inline-block;
+}

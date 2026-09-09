@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Distopic Ravers x Drum Enigma</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos propios de la página de contacto -->
+  <link rel="stylesheet" href="/css/contactanos.css">
+</head>
+<body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-black/90 backdrop-blur-md border-b border-yellow-400/30 sticky top-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="w-8 h-8 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600]">
+        <i class="fas fa-skull text-sm"></i>
+      </a>
+      <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">DISTOPIC</span>
+    </div>
+
+    <!-- Links de Navegación -->
+    <nav class="hidden md:flex gap-8 text-xs font-rave tracking-widest uppercase font-bold">
+      <a href="index.html" class="hover:text-yellow-400 transition">Inicio</a>
+      <a href="index.html#eventos" class="hover:text-yellow-400 transition">Evento</a>
+      <a href="index.html#artistas" class="hover:text-yellow-400 transition">Artistas</a>
+      <a href="index.html#tienda" class="hover:text-yellow-400 transition">Tienda</a>
+      <a href="contactanos.html" class="text-yellow-400 border-b-2 border-yellow-400 pb-0.5 glow-yellow">Contactanos</a>
+      <a href="index.html#quienesSomos" class="hover:text-yellow-400 transition">Quienes somos</a>
+    </nav>
+
+    <!-- Botón Móvil -->
+    <div class="flex items-center gap-3">
+      <button class="md:hidden text-yellow-400 text-2xl hover:scale-110 transition">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="max-w-5xl mx-auto px-4 py-10 md:py-16">
+
+    <!-- CABECERA DE SECCIÓN -->
+    <div class="text-center mb-12 relative">
+      <div class="absolute inset-0 bg-red-600/10 blur-3xl rounded-full -z-10"></div>
+      
+      <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Canal Seguro // Frecuencia Directa</p>
+      
+      <h1 class="flex flex-col sm:flex-row items-center justify-center gap-3 font-graffiti text-5xl sm:text-6xl md:text-7xl uppercase tracking-wide transform -rotate-1 select-none">
+        <span class="text-yellow-400 glow-yellow">CONÉCTATE AL</span>
+        <span class="text-red-500 glow-red">CAOS</span>
+      </h1>
+      
+      <p class="text-zinc-400 font-rave text-xs md:text-sm tracking-widest uppercase mt-4">
+        DJs, alianzas, prensa o dudas sobre accesos: déjanos tu mensaje en la terminal
+      </p>
+    </div>
+
+    <!-- GRID FORMULARIO + DATOS DE CONTACTO -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+      <!-- COLUMNA IZQUIERDA: FORMULARIO CYBERPUNK (7 Cols) -->
+      <section class="lg:col-span-7 border-glow bg-black/85 p-6 md:p-8 rounded-2xl relative">
+        <div class="flex items-center justify-between border-b border-zinc-800 pb-3 mb-6">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping"></span>
+            <span class="font-rave font-bold text-xs uppercase tracking-widest text-zinc-300">Terminal de Transmisión</span>
+          </div>
+          <span class="font-rave text-[10px] text-yellow-400 bg-yellow-400/10 px-2 py-0.5 rounded border border-yellow-400/30">ESTADO: EN LÍNEA</span>
+        </div>
+
+        <form action="#" method="POST" class="space-y-5">
+          
+          <!-- Nombre y Alias -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-rave text-xs uppercase tracking-wider text-zinc-400 mb-2">Nombre Completo *</label>
+              <input type="text" required placeholder="Tu nombre real" class="cyber-input w-full px-4 py-3 rounded-lg text-sm font-sans focus:outline-none">
+            </div>
+            <div>
+              <label class="block font-rave text-xs uppercase tracking-wider text-zinc-400 mb-2">Alias / DJ Name</label>
+              <input type="text" placeholder="Ej: NeonPhantom" class="cyber-input w-full px-4 py-3 rounded-lg text-sm font-sans focus:outline-none">
+            </div>
+          </div>
+
+          <!-- Correo Electrónico -->
+          <div>
+            <label class="block font-rave text-xs uppercase tracking-wider text-zinc-400 mb-2">Correo Electrónico *</label>
+            <input type="email" required placeholder="tucorreo@dominio.com" class="cyber-input w-full px-4 py-3 rounded-lg text-sm font-sans focus:outline-none">
+          </div>
+
+          <!-- Tipo de Asunto -->
+          <div>
+            <label class="block font-rave text-xs uppercase tracking-wider text-zinc-400 mb-2">Motivo de Contacto *</label>
+            <select required class="cyber-input w-full px-4 py-3 rounded-lg text-sm font-sans focus:outline-none bg-black text-zinc-200">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="demo">Envío de Sets / Demos musicales</option>
+              <option value="tickets">Boletos y accesos al evento</option>
+              <option value="press">Prensa y acreditaciones</option>
+              <option value="collab">Alianzas y marcas</option>
+              <option value="other">Otro asunto</option>
+            </select>
+          </div>
+
+          <!-- Mensaje -->
+          <div>
+            <label class="block font-rave text-xs uppercase tracking-wider text-zinc-400 mb-2">Mensaje / Enlace a tu Demo *</label>
+            <textarea rows="4" required placeholder="Escribe aquí tu mensaje o comparte tus enlaces de SoundCloud / Mixcloud..." class="cyber-input w-full px-4 py-3 rounded-lg text-sm font-sans focus:outline-none resize-none"></textarea>
+          </div>
+
+          <!-- Botón de Envío -->
+          <button type="submit" class="w-full bg-yellow-400 text-black font-rave font-extrabold text-sm uppercase tracking-widest py-3.5 rounded-lg hover:bg-yellow-300 transition duration-200 shadow-[0_0_15px_rgba(255,230,0,0.5)] flex items-center justify-center gap-2 group">
+            <span>Transmitir Mensaje</span>
+            <i class="fas fa-bolt group-hover:translate-x-1 text-red-600 transition"></i>
+          </button>
+        </form>
+      </section>
+
+      <!-- COLUMNA DERECHA: ENLACES RÁPIDOS Y REDES (5 Cols) -->
+      <aside class="lg:col-span-5 space-y-5">
+        
+        <!-- Tarjeta WhatsApp -->
+        <div class="border border-red-500/50 bg-black/80 p-6 rounded-xl relative overflow-hidden shadow-[0_0_15px_rgba(239,68,68,0.2)]">
+          <div class="flex items-center gap-4 mb-3">
+            <div class="w-12 h-12 rounded-full border border-red-500 flex items-center justify-center text-red-500 text-2xl shadow-[0_0_10px_#ef4444]">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <div>
+              <h3 class="font-rave font-bold text-lg text-white tracking-wider">Atención Rápida</h3>
+              <p class="text-xs text-zinc-400 font-rave tracking-wider">RESPUESTA EN MENOS DE 24H</p>
+            </div>
+          </div>
+          <p class="text-xs text-zinc-300 font-sans mb-4">¿Preguntas urgentes sobre la locación del Rave o compra directa de entradas?</p>
+          <a href="https://wa.me/573001234567" target="_blank" class="block text-center border border-red-500 text-red-400 font-rave font-bold uppercase tracking-wider py-2.5 rounded-lg hover:bg-red-500 hover:text-white transition shadow-[0_0_10px_rgba(239,68,68,0.3)]">
+            Abrir Chat de WhatsApp
+          </a>
+        </div>
+
+        <!-- Tarjeta Correo e Información General -->
+        <div class="border-glow bg-black/80 p-6 rounded-xl">
+          <h3 class="font-rave font-bold text-base text-yellow-400 tracking-wider mb-4 flex items-center gap-2">
+            <i class="fas fa-network-wired text-sm"></i> CANALES OFICIALES
+          </h3>
+
+          <ul class="space-y-4 text-xs font-rave tracking-wider">
+            <li class="border-b border-zinc-800/80 pb-3">
+              <span class="text-zinc-500 uppercase block text-[10px]">Booking & Demos</span>
+              <a href="mailto:booking@distopicravers.com" class="text-white hover:text-yellow-400 transition font-bold text-sm">booking@distopicravers.com</a>
+            </li>
+            <li class="border-b border-zinc-800/80 pb-3">
+              <span class="text-zinc-500 uppercase block text-[10px]">Dudas Generales</span>
+              <a href="mailto:info@distopicravers.com" class="text-white hover:text-yellow-400 transition font-bold text-sm">info@distopicravers.com</a>
+            </li>
+            <li>
+              <span class="text-zinc-500 uppercase block text-[10px]">Base Operativa</span>
+              <span class="text-zinc-300">Bogotá D.C. // Transmisión Global Online</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta Redes -->
+        <div class="border-2 border-dashed border-zinc-800 bg-black/60 p-5 rounded-xl text-center">
+          <p class="font-rave text-xs text-zinc-400 uppercase tracking-widest mb-3">Redes Comunitarias</p>
+          <div class="flex items-center justify-center gap-6 text-xl text-yellow-400">
+            <a href="#" class="hover:text-red-500 hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-red-500 hover:scale-125 transition"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="hover:text-red-500 hover:scale-125 transition"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="hover:text-red-500 hover:scale-125 transition"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="hover:text-red-500 hover:scale-125 transition"><i class="fab fa-soundcloud"></i></a>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t-2 border-yellow-400 bg-black/95 py-8 px-4 mt-16">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h5 class="font-graffiti text-3xl text-yellow-400 tracking-wider leading-none">Distopic Ravers</h5>
+        <p class="font-rave text-xs text-zinc-400 tracking-widest uppercase mt-1">Underground Sound & Cyberpunk Culture</p>
+      </div>
+
+      <div class="text-center md:text-left">
+        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-rave">Contacto Directo</p>
+        <a href="mailto:info@distopicravers.com" class="text-yellow-400 font-rave font-bold hover:underline">
+          info@distopicravers.com
+        </a>
+      </div>
+
+      <div class="flex items-center gap-5 text-xl text-yellow-400">
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
