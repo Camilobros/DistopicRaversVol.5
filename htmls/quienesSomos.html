@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos | Distopic Ravers x Drum Enigma</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Hoja de estilos exclusiva para Quiénes Somos -->
+  <link rel="stylesheet" href="/css/quienesSomos.css">
+</head>
+<body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="w-full bg-black/90 backdrop-blur-md border-b border-yellow-400/30 sticky top-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="w-8 h-8 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600]">
+        <i class="fas fa-skull text-sm"></i>
+      </a>
+      <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">DISTOPIC</span>
+    </div>
+
+    <!-- Links de Navegación -->
+    <nav class="hidden md:flex gap-8 text-xs font-rave tracking-widest uppercase font-bold">
+      <a href="/index.html" class="hover:text-yellow-400 transition">Inicio</a>
+      <a href="index.html#eventos" class="hover:text-yellow-400 transition">Evento</a>
+      <a href="index.html#artistas" class="hover:text-yellow-400 transition">Artistas</a>
+      <a href="index.html#tienda" class="hover:text-yellow-400 transition">Tienda</a>
+      <a href="/htmls/contactanos.html" class="hover:text-yellow-400 transition">Contactanos</a>
+      <a href="/htmls/quienesSomos.html" class="text-yellow-400 border-b-2 border-yellow-400 pb-0.5 glow-yellow">Quienes somos</a>
+    </nav>
+
+    <!-- Botón Móvil -->
+    <div class="flex items-center gap-3">
+      <button class="md:hidden text-yellow-400 text-2xl hover:scale-110 transition">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-10 md:py-16">
+
+    <!-- CABECERA -->
+    <div class="text-center mb-16 relative">
+      <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+      <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Manifiesto & Arquitectura Subterránea</p>
+      
+      <h1 class="font-graffiti text-5xl sm:text-6xl md:text-7xl uppercase tracking-wide transform -rotate-1 select-none">
+        <span class="text-yellow-400 glow-yellow">EL NÚCLEO</span> 
+        <span class="text-zinc-500 mx-2">✕</span> 
+        <span class="text-red-500 glow-red">LA ALIANZA</span>
+      </h1>
+      <p class="text-zinc-400 font-rave text-xs md:text-sm tracking-widest uppercase mt-4 max-w-2xl mx-auto">
+        Dos visiones unificadas por el sonido industrial, la libertad nocturna y la construcción de un espacio sonoro libre de restricciones.
+      </p>
+    </div>
+
+    <!-- SECCIÓN: LOS COLECTIVOS (2 COLUMNAS) -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+      
+      <!-- Distopic Ravers -->
+      <div class="border-glow-yellow bg-black/85 p-6 md:p-8 rounded-2xl relative overflow-hidden group">
+        <div class="flex items-center justify-between border-b border-yellow-400/20 pb-4 mb-4">
+          <div class="flex items-center gap-3">
+            <i class="fa-regular fa-face-smile text-yellow-400 text-2xl"></i>
+            <h2 class="font-graffiti text-3xl text-yellow-400 glow-yellow">Distopic Ravers</h2>
+          </div>
+          <span class="font-rave text-[10px] text-yellow-400 uppercase tracking-widest border border-yellow-400/40 px-2 py-0.5 rounded">MOVIMIENTO</span>
+        </div>
+        <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+          Nacido como un refugio de contracultura urbana, Distopic Ravers representa la resistencia a través del sonido. Un colectivo enfocado en la producción de experiencias Free Rave, estética industrial distópica y la difusión de frecuencias crudas: Hard Techno, Acid e Industrial. Nuestra misión es devolverle la noche a la gente mediante autogestión, arte callejero y comunidad abierta.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="tag-pill text-yellow-400 border-yellow-400/30">Free Rave</span>
+          <span class="tag-pill text-yellow-400 border-yellow-400/30">Hard Techno</span>
+          <span class="tag-pill text-yellow-400 border-yellow-400/30">Autogestión</span>
+        </div>
+      </div>
+
+      <!-- Drum Enigma -->
+      <div class="border-glow-red bg-black/85 p-6 md:p-8 rounded-2xl relative overflow-hidden group">
+        <div class="flex items-center justify-between border-b border-red-500/20 pb-4 mb-4">
+          <div class="flex items-center gap-3">
+            <i class="fas fa-drum text-red-500 text-2xl"></i>
+            <h2 class="font-graffiti text-3xl text-red-500 glow-red">Drum Enigma</h2>
+          </div>
+          <span class="font-rave text-[10px] text-red-400 uppercase tracking-widest border border-red-500/40 px-2 py-0.5 rounded">CONCEPTO SONORO</span>
+        </div>
+        <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+          Drum Enigma es la entidad encargada de descifrar la arquitectura rítmica y la inmersión sensorial. Especializado en curadurías que exploran el trance mental, la percusión implacable y atmósferas oscuras, este colectivo actúa como el engranaje conceptual que asegura que cada evento cuente una historia coherente entre escenografía, narrativa e impacto sonoro.
+        </p>
+        <div class="flex flex-wrap gap-2 pt-2">
+          <span class="tag-pill text-red-400 border-red-500/30">Rhythm Design</span>
+          <span class="tag-pill text-red-400 border-red-500/30">Inmersión</span>
+          <span class="tag-pill text-red-400 border-red-500/30">Atmósferas</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECCIÓN: EQUIPO DE DESARROLLO Y LIDERAZGO -->
+    <section>
+      <div class="text-center mb-12">
+        <h3 class="font-rave font-bold text-xs uppercase tracking-[0.3em] text-yellow-400">OPERADORES DEL SISTEMA</h3>
+        <p class="font-graffiti text-3xl md:text-4xl text-white mt-1">Liderazgo & Desarrollo</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Bryan Camilo Díaz Sánchez -->
+        <div class="team-card border-glow-yellow bg-black/80 p-6 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg bg-yellow-400/10 border border-yellow-400/40 flex items-center justify-center text-yellow-400 text-xl font-bold">
+                <i class="fas fa-code"></i>
+              </div>
+              <span class="role-badge border-yellow-400/40 text-yellow-400">DESARROLLO</span>
+            </div>
+            <h4 class="font-rave font-bold text-xl text-white tracking-wide">Bryan Camilo Díaz Sánchez</h4>
+            <p class="font-rave text-xs text-yellow-400 uppercase tracking-wider mt-0.5">Desarrollador Junior Full Stack</p>
+            <p class="text-zinc-400 text-xs mt-3 leading-relaxed">
+              Encargado de la estructura de código, componentes responsivos e integración tecnológica de la plataforma web de la alianza.
+            </p>
+          </div>
+          <div class="border-t border-zinc-800/80 pt-3 mt-4 flex items-center justify-between text-[11px] font-rave text-zinc-500">
+            <span>Terminal Core</span>
+            <span class="text-yellow-400"><i class="fas fa-terminal mr-1"></i>Web Dev</span>
+          </div>
+        </div>
+
+        <!-- David Enrique Díaz Rendón -->
+        <div class="team-card border border-zinc-800 bg-black/80 p-6 rounded-xl flex flex-col justify-between hover:border-zinc-500 transition">
+          <div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-300 text-xl font-bold">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <span class="role-badge border-zinc-600 text-zinc-300">GESTIÓN</span>
+            </div>
+            <h4 class="font-rave font-bold text-xl text-white tracking-wide">David Enrique Díaz Rendón</h4>
+            <p class="font-rave text-xs text-zinc-400 uppercase tracking-wider mt-0.5">Gestor de Proyecto (Project Manager)</p>
+            <p class="text-zinc-400 text-xs mt-3 leading-relaxed">
+              Supervisión de metas, asignación de tareas, cronogramas y coordinación general para que el desarrollo digital y logístico marchen alineados.
+            </p>
+          </div>
+          <div class="border-t border-zinc-800/80 pt-3 mt-4 flex items-center justify-between text-[11px] font-rave text-zinc-500">
+            <span>Operaciones</span>
+            <span class="text-zinc-300"><i class="fas fa-sitemap mr-1"></i>Management</span>
+          </div>
+        </div>
+
+        <!-- House -->
+        <div class="team-card border-glow-yellow bg-black/80 p-6 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg bg-yellow-400/10 border border-yellow-400/40 flex items-center justify-center text-yellow-400 text-xl font-bold">
+                <i class="fas fa-compact-disc"></i>
+              </div>
+              <span class="role-badge border-yellow-400/40 text-yellow-400">CO-FOUNDER</span>
+            </div>
+            <h4 class="font-rave font-bold text-xl text-white tracking-wide">House</h4>
+            <p class="font-rave text-xs text-yellow-400 uppercase tracking-wider mt-0.5">Co-Director Distopic Ravers · DJ · Dev Jr</p>
+            <p class="text-zinc-400 text-xs mt-3 leading-relaxed">
+              Copropietario del 50% del colectivo. Actúa como puente entre la identidad de pista como DJ residente y el desarrollo junior del sitio.
+            </p>
+          </div>
+          <div class="border-t border-zinc-800/80 pt-3 mt-4 flex items-center justify-between text-[11px] font-rave text-zinc-500">
+            <span>Frecuencias & Código</span>
+            <span class="text-yellow-400"><i class="fas fa-music mr-1"></i>Resident DJ</span>
+          </div>
+        </div>
+
+        <!-- In Beat -->
+        <div class="team-card border-glow-red bg-black/80 p-6 rounded-xl flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg bg-red-600/10 border border-red-500/40 flex items-center justify-center text-red-500 text-xl font-bold">
+                <i class="fas fa-wave-square"></i>
+              </div>
+              <span class="role-badge border-red-500/40 text-red-400">FOUNDER</span>
+            </div>
+            <h4 class="font-rave font-bold text-xl text-white tracking-wide">In Beat</h4>
+            <p class="font-rave text-xs text-red-400 uppercase tracking-wider mt-0.5">Director Conceptual & Dueño Drum Enigma</p>
+            <p class="text-zinc-400 text-xs mt-3 leading-relaxed">
+              Líder de Drum Enigma. Garantiza la coherencia temática del concepto underground con la ejecución real del montaje físico y auditivo del evento.
+            </p>
+          </div>
+          <div class="border-t border-zinc-800/80 pt-3 mt-4 flex items-center justify-between text-[11px] font-rave text-zinc-500">
+            <span>Curaduría de Evento</span>
+            <span class="text-red-400"><i class="fas fa-lightbulb mr-1"></i>Creative Lead</span>
+          </div>
+        </div>
+
+        <!-- Osqui -->
+        <div class="team-card border border-red-500/40 bg-black/80 p-6 rounded-xl flex flex-col justify-between hover:border-red-400 transition">
+          <div>
+            <div class="flex items-start justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg bg-red-600/10 border border-red-500/30 flex items-center justify-center text-red-400 text-xl font-bold">
+                <i class="fas fa-palette"></i>
+              </div>
+              <span class="role-badge border-red-500/30 text-red-400">ARTE VISUAL</span>
+            </div>
+            <h4 class="font-rave font-bold text-xl text-white tracking-wide">Osqui</h4>
+            <p class="font-rave text-xs text-red-400 uppercase tracking-wider mt-0.5">Lead Visual & UI/UX Conceptual</p>
+            <p class="text-zinc-400 text-xs mt-3 leading-relaxed">
+              Encargado de la estética gráfica, atmósfera cyberpunk y dirección visual de la plataforma digital para transmitir la esencia underground.
+            </p>
+          </div>
+          <div class="border-t border-zinc-800/80 pt-3 mt-4 flex items-center justify-between text-[11px] font-rave text-zinc-500">
+            <span>Diseño & Mood</span>
+            <span class="text-red-400"><i class="fas fa-eye mr-1"></i>Visual Design</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t-2 border-yellow-400 bg-black/95 py-8 px-4 mt-20">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h5 class="font-graffiti text-3xl text-yellow-400 tracking-wider leading-none">Distopic Ravers</h5>
+        <p class="font-rave text-xs text-zinc-400 tracking-widest uppercase mt-1">Underground Sound & Cyberpunk Culture</p>
+      </div>
+
+      <div class="text-center md:text-left">
+        <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-rave">Contacto Directo</p>
+        <a href="mailto:info@distopicravers.com" class="text-yellow-400 font-rave font-bold hover:underline">
+          info@distopicravers.com
+        </a>
+      </div>
+
+      <div class="flex items-center gap-5 text-xl text-yellow-400">
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="hover:scale-125 transition"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
