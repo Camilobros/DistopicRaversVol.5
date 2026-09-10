@@ -1,0 +1,88 @@
+:root {
+  --neon-yellow: #FFE600;
+  --neon-red: #ef4444;
+  --dark-bg: #070708;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: #ffffff;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Fuentes personalizadas */
+.font-graffiti {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.font-rave {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+/* Efectos de texto Neón */
+.glow-yellow {
+  text-shadow: 0 0 10px rgba(255, 230, 0, 0.7), 0 0 25px rgba(255, 230, 0, 0.4);
+}
+
+.glow-red {
+  text-shadow: 0 0 10px rgba(239, 68, 68, 0.8), 0 0 25px rgba(239, 68, 68, 0.5);
+}
+
+/* Bordes Neón Amarillo y Rojo */
+.border-glow-yellow {
+  border: 2px solid var(--neon-yellow);
+  box-shadow: 0 0 14px rgba(255, 230, 0, 0.25), inset 0 0 6px rgba(255, 230, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.border-glow-yellow:hover {
+  box-shadow: 0 0 22px rgba(255, 230, 0, 0.5), inset 0 0 10px rgba(255, 230, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.border-glow-red {
+  border: 2px solid var(--neon-red);
+  box-shadow: 0 0 14px rgba(239, 68, 68, 0.25), inset 0 0 6px rgba(239, 68, 68, 0.1);
+  transition: all 0.3s ease;
+}
+
+.border-glow-red:hover {
+  box-shadow: 0 0 22px rgba(239, 68, 68, 0.5), inset 0 0 10px rgba(239, 68, 68, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Fondo con degradado industrial */
+.bg-grunge {
+  background: radial-gradient(circle at 50% 20%, rgba(35, 30, 5, 0.3) 0%, rgba(7, 7, 8, 0.98) 75%),
+              linear-gradient(to bottom, rgba(7, 7, 8, 0.7), #070708);
+  background-blend-mode: overlay;
+}
+
+/* Tarjetas y Etiquetas */
+.team-card {
+  transition: all 0.25s ease-in-out;
+}
+
+.role-badge {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border-width: 1px;
+  text-transform: uppercase;
+}
+
+.tag-pill {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 9999px;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
