@@ -4,13 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Lista de enlaces
   const navLinks = [
-    { name: 'Inicio', url: '/index.html' },
-    { name: 'Evento', url: '/htmls/eventos.html' },
-    { name: 'Artistas', url: '/htmls/artistas.html' },
-    { name: 'Tienda', url: '/htmls/tienda.html' },
-    { name: 'Contactanos', url: '/htmls/contactanos.html' },
-    { name: 'Quienes somos', url: '/htmls/quienesSomos.html' },
-    { name: 'apoyanos', url: '/htmls/apoyanos.html'}
+    { name: 'Inicio', url: 'index.html' },
+    { name: 'Evento', url: 'htmls/eventos.html' },
+    { name: 'Artistas', url: 'htmls/artistas.html' },
+    { name: 'Tienda', url: 'htmls/tienda.html' },
+    { name: 'Contactanos', url: 'htmls/contactanos.html' },
+    { name: 'Quienes somos', url: 'htmls/quienesSomos.html' },
+    { name: 'apoyanos', url: 'htmls/apoyanos.html'}
   ];
 
   const currentPath = window.location.pathname;
