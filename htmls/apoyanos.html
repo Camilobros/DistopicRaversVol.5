@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apoya el Movimiento | Distopic Ravers x Drum Enigma</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios de Apóyanos -->
+  <link rel="stylesheet" href="/css/apoyanos.css">
+</head>
+<body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
+
+  <!-- NAVBAR REUTILIZABLE -->
+  <div id="main-navbar"></div>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="max-w-5xl mx-auto px-4 py-8 md:py-14">
+
+    <!-- CABECERA DE SECCIÓN -->
+    <div class="text-center relative my-6">
+      <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+      
+      <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Autogestión Colectiva // Free Rave Culture</p>
+      
+      <h1 class="font-graffiti text-5xl sm:text-7xl md:text-8xl uppercase tracking-wide leading-none select-none">
+        <span class="text-yellow-400 glow-yellow">FUND THE</span> 
+        <span class="text-red-500 glow-red">RAVE</span>
+      </h1>
+      
+      <p class="text-zinc-400 font-rave text-xs md:text-sm tracking-widest uppercase mt-4 max-w-xl mx-auto">
+        Nuestros eventos son libres y gratuitos para la comunidad. Cada aporte voluntario impulsa el sistema de sonido, la logística y la resistencia sonora.
+      </p>
+    </div>
+
+    <!-- SECCIÓN: EN QUÉ SE INVIERTE EL DINERO -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 text-center">
+      <div class="border border-zinc-800 bg-black/70 p-5 rounded-xl">
+        <i class="fas fa-volume-high text-3xl text-yellow-400 mb-3"></i>
+        <h3 class="font-rave font-bold text-sm uppercase text-white tracking-wider">Sistema de Sonido</h3>
+        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Mantenimiento y alquiler de subwoofers, plantas de audio y monitores de cabina.</p>
+      </div>
+
+      <div class="border border-zinc-800 bg-black/70 p-5 rounded-xl">
+        <i class="fas fa-bolt text-3xl text-red-500 mb-3"></i>
+        <h3 class="font-rave font-bold text-sm uppercase text-white tracking-wider">Generadores & Energía</h3>
+        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Combustible para plantas eléctricas y cableado industrial en espacios abiertos.</p>
+      </div>
+
+      <div class="border border-zinc-800 bg-black/70 p-5 rounded-xl">
+        <i class="fas fa-broom text-3xl text-yellow-400 mb-3"></i>
+        <h3 class="font-rave font-bold text-sm uppercase text-white tracking-wider">Logística & Limpieza</h3>
+        <p class="text-xs text-zinc-400 mt-1 leading-relaxed">Gestión de residuos, bolsas, hidratación y cuidado del espacio público post-evento.</p>
+      </div>
+    </section>
+
+    <!-- MÉTODOS DE DONACIÓN DIRECTA -->
+    <section class="my-12">
+      <div class="text-center mb-8">
+        <h2 class="font-rave font-bold text-xs uppercase tracking-[0.3em] text-yellow-400">Canales Directos de Aporte</h2>
+        <p class="font-graffiti text-3xl text-white mt-1">Elige cómo sumar al movimiento</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+        
+        <!-- Nequi & Daviplata -->
+        <div class="border-glow-yellow bg-black/85 p-6 rounded-2xl relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-zinc-800 pb-3 mb-4">
+            <span class="font-rave font-bold text-xs text-yellow-400 uppercase tracking-wider">Billeteras Móviles (Colombia)</span>
+            <i class="fas fa-mobile-screen-button text-yellow-400 text-lg"></i>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Nequi -->
+            <div class="bg-zinc-950/80 p-3.5 rounded-lg border border-zinc-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-rave text-zinc-500 uppercase block">Nequi</span>
+                <span class="font-rave text-lg font-bold text-white tracking-wider">314 241 8909</span>
+              </div>
+              <span class="text-[11px] font-rave text-yellow-400 font-bold uppercase">Distopic Ravers</span>
+            </div>
+
+            <!-- Daviplata -->
+            <div class="bg-zinc-950/80 p-3.5 rounded-lg border border-zinc-800 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] font-rave text-zinc-500 uppercase block">Daviplata</span>
+                <span class="font-rave text-lg font-bold text-white tracking-wider">320 494 8048</span>
+              </div>
+              <span class="text-[11px] font-rave text-red-400 font-bold uppercase">Drum Enigma</span>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-zinc-500 mt-4 text-center font-rave uppercase tracking-wider">
+            Cualquier aporte desde $2.000 COP mantiene vivas las noches libres
+          </p>
+        </div>
+
+        <!-- Criptoactivos / Transmisión Global -->
+        <div class="border-glow-red bg-black/85 p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-3 mb-4">
+              <span class="font-rave font-bold text-xs text-red-500 uppercase tracking-wider">Aportes Cripto // Internacional</span>
+              <i class="fab fa-bitcoin text-red-500 text-lg"></i>
+            </div>
+
+            <p class="text-xs text-zinc-300 font-sans leading-relaxed mb-4">
+              Para quienes apoyan la causa fuera de Colombia o prefieren la descentralización digital directa:
+            </p>
+
+            <div class="bg-zinc-950/80 p-3.5 rounded-lg border border-zinc-800">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-rave text-zinc-400 uppercase">USDT (Red TRC20)</span>
+                <span class="text-[9px] bg-red-600/20 text-red-400 px-1.5 py-0.5 rounded font-rave uppercase">Cero Fee</span>
+              </div>
+              <p class="font-mono text-[11px] text-zinc-300 break-all select-all bg-black/60 p-2 rounded border border-zinc-900">
+                TBx...TU_BILLETERA_CRYPTO_AQUI...78xQ
+              </p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/573142418909?text=Hola,%20hice%20un%20aporte%20para%20la%20Lunada%20Free%20Rave" target="_blank" rel="noopener noreferrer" class="mt-4 block text-center py-2.5 bg-red-600 text-white font-rave font-bold text-xs uppercase tracking-widest rounded hover:bg-red-500 transition">
+            Enviar Comprobante al Colectivo
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN DISCRETA / PROPUESTA WEB DEL DESARROLLADOR -->
+    <section class="mt-20 pt-10 border-t border-zinc-900">
+      <div class="max-w-3xl mx-auto border border-zinc-800/80 bg-zinc-950/60 rounded-xl p-5 md:p-6 relative overflow-hidden backdrop-blur-sm">
+        
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+          
+          <!-- Lado Izquierdo: Mensaje con estilo de Terminal -->
+          <div class="space-y-1 text-center sm:text-left">
+            <div class="flex items-center justify-center sm:justify-start gap-2">
+              <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+              <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-widest">Protocolo de Desarrollo // Dev Credit</span>
+            </div>
+            <h3 class="font-rave font-bold text-base text-white tracking-wide">
+              ¿Te gusta esta web para tu marca, colectivo o evento?
+            </h3>
+            <p class="text-xs text-zinc-400 font-sans max-w-lg leading-relaxed">
+              Diseñada y ensamblada desde cero por <span class="text-yellow-400 font-bold">Bryan Díaz Sánchez</span>. Si buscas una página moderna, rápida, responsiva y con identidad propia, hablemos.
+            </p>
+          </div>
+
+          <!-- Lado Derecho: Botón de Contacto Directo -->
+          <div class="shrink-0">
+            <a href="https://wa.me/573204948048?text=Hola%20Bryan,%20vi%20la%20página%20de%20Distopic%20Ravers%20y%20me%20gustaría%20cotizar%20un%20proyecto%20web" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-2 border border-yellow-400/50 bg-yellow-400/10 hover:bg-yellow-400 hover:text-black text-yellow-400 px-4 py-2.5 rounded-lg text-xs font-rave font-bold uppercase tracking-wider transition duration-200">
+              <i class="fas fa-terminal text-xs"></i>
+              <span>Cotizar con el Dev</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER REUTILIZABLE -->
+  <div id="main-footer"></div>
+
+  <!-- SCRIPTS COMPARTIDOS -->
+  <script src="/js/navbar.js"></script>
+  <script src="/js/footer.js"></script>
+
+</body>
+</html>

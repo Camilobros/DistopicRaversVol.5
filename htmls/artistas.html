@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Up & Artistas | Distopic Ravers x Drum Enigma</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos propios de Artistas -->
+    <link rel="stylesheet" href="/css/artistas.css">
+</head>
+
+<body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
+
+    <!-- CONTENEDOR DE NAVBAR REUTILIZABLE -->
+    <div id="main-navbar"></div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-14">
+
+        <!-- CABECERA DE SECCIÓN -->
+        <div class="text-center relative my-6">
+            <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+
+            <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Transmisores de Frecuencias //
+                Cabina Abierta</p>
+
+            <h1 class="font-graffiti text-5xl sm:text-7xl md:text-8xl uppercase tracking-wide leading-none select-none">
+                <span class="text-yellow-400 glow-yellow">LINE</span>
+                <span class="text-red-500 glow-red">UP</span>
+            </h1>
+
+            <p class="text-zinc-400 font-rave text-xs md:text-sm tracking-widest uppercase mt-4 max-w-xl mx-auto">
+                Los selectores y arquitectos del sonido a cargo de reventar el Monumento a Banderas.
+            </p>
+
+            <!-- Píldoras de géneros musicales -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+                <span class="tag-pill text-yellow-400 border-yellow-400/40">Hard Techno</span>
+                <span class="tag-pill text-red-500 border-red-500/40">Industrial</span>
+                <span class="tag-pill text-yellow-400 border-yellow-400/40">Acid</span>
+                <span class="tag-pill text-red-500 border-red-500/40">Schranz</span>
+                <span class="tag-pill text-zinc-300 border-zinc-700">Live Hardware</span>
+            </div>
+        </div>
+
+        <!-- GRILLA MODULAR DE ARTISTAS (3 COLUMNAS EN DESKTOP) -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+
+            <!-- TARJETA 1: HOUSE (DJ Residente) -->
+            <article
+                class="dj-card border-glow-yellow bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <!-- Foto / Avatar con efecto industrial -->
+                    <div class="dj-photo-box relative flex items-center justify-center">
+                        <i class="fas fa-compact-disc text-6xl text-yellow-400 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-yellow-400 text-black font-extrabold px-2 py-0.5 rounded uppercase">
+                            Residente
+                        </span>
+                    </div>
+
+                    <!-- Información del DJ -->
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Distopic Ravers</p>
+                        <h2 class="font-rave font-bold text-2xl text-yellow-400 tracking-wider mt-0.5">HOUSE</h2>
+                        <p class="text-xs text-zinc-300 font-sans mt-2 leading-relaxed">
+                            Bajos pesados, transiciones cortantes y ritmos acelerados de Acid & Hard Techno para abrir
+                            brecha en la pista.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-[11px] font-rave text-zinc-400">
+                            <i class="fas fa-clock text-yellow-400"></i>
+                            <span>SET: 00:00 AM - 01:30 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enlaces a Redes y Música del DJ -->
+                <div class="px-5 pb-5 pt-2 border-t border-zinc-800/80 flex items-center justify-between">
+                    <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-wider">Escuchar:</span>
+                    <div class="flex items-center gap-3 text-sm text-yellow-400">
+                        <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="SoundCloud de House" class="hover:text-red-500 hover:scale-125 transition"><i
+                                class="fab fa-soundcloud"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram de House" class="hover:text-red-500 hover:scale-125 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Spotify de House" class="hover:text-red-500 hover:scale-125 transition"><i
+                                class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TARJETA 2: IN BEAT (Live Act) -->
+            <article
+                class="dj-card border-glow-red bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <!-- Foto / Avatar con efecto industrial -->
+                    <div class="dj-photo-box relative flex items-center justify-center">
+                        <i class="fas fa-wave-square text-6xl text-red-500 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-red-600 text-white font-extrabold px-2 py-0.5 rounded uppercase">
+                            Live Act
+                        </span>
+                    </div>
+
+                    <!-- Información del DJ -->
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Drum Enigma</p>
+                        <h2 class="font-rave font-bold text-2xl text-red-500 tracking-wider mt-0.5">IN BEAT</h2>
+                        <p class="text-xs text-zinc-300 font-sans mt-2 leading-relaxed">
+                            Secuencias de sintetizadores analógicos, percusión modular en vivo y texturas oscuras que
+                            hipnotizan al público.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-[11px] font-rave text-zinc-400">
+                            <i class="fas fa-clock text-red-500"></i>
+                            <span>SET: 01:30 AM - 03:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enlaces a Redes y Música del DJ -->
+                <div class="px-5 pb-5 pt-2 border-t border-zinc-800/80 flex items-center justify-between">
+                    <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-wider">Escuchar:</span>
+                    <div class="flex items-center gap-3 text-sm text-red-500">
+                        <a href="https://soundcloud.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="SoundCloud de In Beat"
+                            class="hover:text-yellow-400 hover:scale-125 transition"><i
+                                class="fab fa-soundcloud"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram de In Beat"
+                            class="hover:text-yellow-400 hover:scale-125 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube de In Beat" class="hover:text-yellow-400 hover:scale-125 transition"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TARJETA 3: GENÉRICA INVITADO 1 -->
+            <article
+                class="dj-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-yellow-400 transition">
+                <div>
+                    <div class="dj-photo-box relative flex items-center justify-center">
+                        <i class="fas fa-headphones text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Guest DJ
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Colectivo Invitado</p>
+                        <h2 class="font-rave font-bold text-2xl text-white tracking-wider mt-0.5">DJ / ALIAS #03</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Industrial Rave, frecuencias distorsionadas y kicks demoledores traídos desde la escena
+                            local subterránea.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-[11px] font-rave text-zinc-400">
+                            <i class="fas fa-clock text-yellow-400"></i>
+                            <span>SET: Horario por confirmar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-5 pb-5 pt-2 border-t border-zinc-800/80 flex items-center justify-between">
+                    <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-wider">Escuchar:</span>
+                    <div class="flex items-center gap-3 text-sm text-yellow-400">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-soundcloud"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TARJETA 4: GENÉRICA INVITADO 2 -->
+            <article
+                class="dj-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-red-500 transition">
+                <div>
+                    <div class="dj-photo-box relative flex items-center justify-center">
+                        <i class="fas fa-bolt text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Guest DJ
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Underground Selector
+                        </p>
+                        <h2 class="font-rave font-bold text-2xl text-white tracking-wider mt-0.5">DJ / ALIAS #04</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Sonidos hipnóticos y oscuros cargados de energía acid para mantener encendido el Monumento a
+                            Banderas.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-[11px] font-rave text-zinc-400">
+                            <i class="fas fa-clock text-red-500"></i>
+                            <span>SET: Horario por confirmar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-5 pb-5 pt-2 border-t border-zinc-800/80 flex items-center justify-between">
+                    <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-wider">Escuchar:</span>
+                    <div class="flex items-center gap-3 text-sm text-red-500">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-soundcloud"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TARJETA 5: GENÉRICA INVITADO 3 -->
+            <article
+                class="dj-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-yellow-400 transition">
+                <div>
+                    <div class="dj-photo-box relative flex items-center justify-center">
+                        <i class="fas fa-skull text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            B2B Set
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Alianza Especial</p>
+                        <h2 class="font-rave font-bold text-2xl text-white tracking-wider mt-0.5">SPECIAL B2B</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Doble tornamesa en simultáneo. Dos selectores desafiándose cara a cara en un set de alta
+                            velocidad.
+                        </p>
+
+                        <div class="flex items-center gap-2 mt-4 text-[11px] font-rave text-zinc-400">
+                            <i class="fas fa-clock text-yellow-400"></i>
+                            <span>SET: Cierre de jornada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-5 pb-5 pt-2 border-t border-zinc-800/80 flex items-center justify-between">
+                    <span class="font-rave text-[10px] text-zinc-500 uppercase tracking-wider">Escuchar:</span>
+                    <div class="flex items-center gap-3 text-sm text-yellow-400">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-soundcloud"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:scale-125 transition"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- TARJETA 6: CUPÓN DE CABINA ABIERTA / SPOT DISPONIBLE -->
+            <article
+                class="border-2 border-dashed border-yellow-400/50 bg-black/60 rounded-xl p-6 flex flex-col justify-between text-center group hover:border-yellow-400 transition">
+                <div class="my-auto py-6">
+                    <div
+                        class="w-14 h-14 rounded-full border border-yellow-400/60 mx-auto flex items-center justify-center text-yellow-400 text-2xl mb-4 group-hover:scale-110 transition shadow-[0_0_12px_rgba(255,230,0,0.3)]">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <h2 class="font-rave font-bold text-xl text-yellow-400 tracking-wider uppercase">¿Quieres tocar
+                        aquí?</h2>
+                    <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed max-w-xs mx-auto">
+                        Buscamos talentos emergentes del Hard Techno y Acid para sumarse al cartel de la Lunada.
+                    </p>
+                </div>
+
+                <a href="/htmls/contactanos.html"
+                    class="block w-full py-2.5 px-4 bg-yellow-400 text-black font-rave font-bold text-xs uppercase tracking-widest rounded hover:bg-yellow-300 transition shadow-[0_0_10px_#FFE600]">
+                    Enviar Mi Demo
+                </a>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- CONTENEDOR DE FOOTER REUTILIZABLE -->
+    <div id="main-footer"></div>
+
+    <!-- SCRIPTS COMPARTIDOS -->
+    <script src="/js/navbar.js"></script>
+    <script src="/js/footer.js"></script>
+
+</body>
+
+</html>

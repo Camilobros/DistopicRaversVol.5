@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Oficial | Distopic Ravers x Drum Enigma</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rajdhani:wght@600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos propios de Tienda -->
+    <link rel="stylesheet" href="/css/tienda.css">
+</head>
+
+<body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
+
+    <!-- NAVBAR REUTILIZABLE -->
+    <div id="main-navbar"></div>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-14">
+
+        <!-- CABECERA DE SECCIÓN -->
+        <div class="text-center relative my-6">
+            <div class="absolute inset-0 bg-yellow-400/5 blur-3xl rounded-full -z-10"></div>
+
+            <p class="font-rave text-xs tracking-[0.3em] uppercase text-zinc-400 mb-2">Streetwear · Indumentaria ·
+                Accesorios</p>
+
+            <h1 class="font-graffiti text-5xl sm:text-7xl md:text-8xl uppercase tracking-wide leading-none select-none">
+                <span class="text-yellow-400 glow-yellow">MERCH</span>
+                <span class="text-red-500 glow-red">STORE</span>
+            </h1>
+
+            <p class="text-zinc-400 font-rave text-xs md:text-sm tracking-widest uppercase mt-4 max-w-xl mx-auto">
+                Autogestión pura. Cada prenda o accesorio financia directamente el sonido y la producción de nuestros
+                eventos libres.
+            </p>
+
+            <!-- Píldoras de Filtro (Visuales) -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mt-6">
+                <span class="filter-pill active">Todos</span>
+                <span class="filter-pill">Prendas</span>
+                <span class="filter-pill">Accesorios</span>
+                <span class="filter-pill">Stickers & Prints</span>
+            </div>
+        </div>
+
+        <!-- CATÁLOGO DE PRODUCTOS (GRILLA 3 COLUMNAS) -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
+
+            <!-- PRODUCTO 1: CAMISETA OVERSIZE -->
+            <article
+                class="product-card border-glow-yellow bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <!-- Contenedor de Imagen -->
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-tshirt text-6xl text-yellow-400 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-yellow-400 text-black font-extrabold px-2 py-0.5 rounded uppercase">
+                            Drop Limitado
+                        </span>
+                    </div>
+
+                    <!-- Info -->
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Prenda // Distopic</p>
+                        <h2 class="font-rave font-bold text-xl text-yellow-400 tracking-wider mt-0.5">Camiseta Oversize
+                            Acid</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            100% algodón pesado de 240g. Serigrafía táctil de alta duración en pecho y espalda. Tallas:
+                            S · M · L · XL.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$65.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">Stock Disponible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botón de Compra directa -->
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20la%20Camiseta%20Oversize%20Acid"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn bg-yellow-400 text-black hover:bg-yellow-300">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 2: HOODIE / BUZO INDUSTRIAL -->
+            <article
+                class="product-card border-glow-red bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between">
+                <div>
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-vest text-6xl text-red-500 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-red-600 text-white font-extrabold px-2 py-0.5 rounded uppercase">
+                            Básico Rave
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Prenda // Drum Enigma
+                        </p>
+                        <h2 class="font-rave font-bold text-xl text-red-500 tracking-wider mt-0.5">Buzo Hoodie
+                            Industrial</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Algodón perchado perchado térmico negro mate. Capota doble y bolsillo frontal canguro con
+                            cordones neón.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$120.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">Pocas Unidades</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20el%20Buzo%20Hoodie%20Industrial"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn bg-red-600 text-white hover:bg-red-500 shadow-[0_0_12px_rgba(239,68,68,0.3)]">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 3: GAFAS SPEED / CYBERPUNK -->
+            <article
+                class="product-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-yellow-400 transition">
+                <div>
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-glasses text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Accesorios
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Gear // Óptica</p>
+                        <h2 class="font-rave font-bold text-xl text-white tracking-wider mt-0.5">Gafas Rave Speed Shades
+                        </h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Lente panorámico oscuro con protección UV400. Marco aerodinámico ultra liviano para sesiones
+                            de pista extensas.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$35.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">En Bodega</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20las%20Gafas%20Rave%20Speed%20Shades"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 4: ABANICO RAVE XXL -->
+            <article
+                class="product-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-red-500 transition">
+                <div>
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-wind text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Indispensable
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Gear // Sonido</p>
+                        <h2 class="font-rave font-bold text-xl text-white tracking-wider mt-0.5">Abanico Rave XXL Clack
+                        </h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Estructura de bambú reforzado con tela sintética estampada. Sonido 'Clack' contundente al
+                            abrir.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$40.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">Stock Disponible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20el%20Abanico%20Rave%20XXL"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn border border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 5: PACK STICKERS HOLOGRÁFICOS -->
+            <article
+                class="product-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-yellow-400 transition">
+                <div>
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-layer-group text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Arte Callejero
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Print // Colectivo</p>
+                        <h2 class="font-rave font-bold text-xl text-white tracking-wider mt-0.5">Pack Stickers
+                            Holográficos</h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Set de 10 calcomanías impermeables en vinilo metalizado y holográfico con los logos
+                            oficiales de la alianza.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$15.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">Alta Rotación</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20el%20Pack%20de%20Stickers%20Holográficos"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 6: BALACLAVA / PASAMONTAÑAS TÁCTICO -->
+            <article
+                class="product-card border border-zinc-800 bg-black/85 rounded-xl overflow-hidden flex flex-col justify-between hover:border-red-500 transition">
+                <div>
+                    <div class="product-img-box relative flex items-center justify-center">
+                        <i class="fas fa-mask text-6xl text-zinc-600 opacity-60"></i>
+                        <span
+                            class="absolute top-3 right-3 font-rave text-[10px] bg-zinc-800 text-zinc-300 font-bold px-2 py-0.5 rounded uppercase">
+                            Underground
+                        </span>
+                    </div>
+
+                    <div class="p-5">
+                        <p class="font-rave text-[11px] text-zinc-400 uppercase tracking-widest">Tactical // Invierno
+                        </p>
+                        <h2 class="font-rave font-bold text-xl text-white tracking-wider mt-0.5">Balaclava Táctico Neón
+                        </h2>
+                        <p class="text-xs text-zinc-400 font-sans mt-2 leading-relaxed">
+                            Tela transpirable elástica con costuras reforzadas y detalles reflectivos que reaccionan a
+                            la luz UV/estrobos.
+                        </p>
+                        <div class="flex items-center justify-between mt-4">
+                            <span class="font-rave text-2xl font-extrabold text-white">$25.000 COP</span>
+                            <span class="font-rave text-[10px] text-zinc-500 uppercase">Stock Disponible</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-5 pt-0">
+                    <a href="https://wa.me/573142418909?text=Hola,%20quiero%20ordenar%20el%20Balaclava%20Táctico"
+                        target="_blank" rel="noopener noreferrer"
+                        class="buy-btn border border-red-500 text-red-400 hover:bg-red-500 hover:text-white">
+                        <i class="fab fa-whatsapp text-base"></i>
+                        <span>Pedir por WhatsApp</span>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- BANNER DE INFORMACIÓN DE ENVÍOS Y ENTREGAS -->
+        <section class="border-2 border-dashed border-zinc-800 bg-black/60 rounded-2xl p-6 md:p-8 my-14">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+
+                <div class="space-y-2">
+                    <i class="fas fa-truck-fast text-2xl text-yellow-400"></i>
+                    <h3 class="font-rave font-bold text-base uppercase text-white">Envíos Nacionales</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Despachos a toda Colombia por Inter Rapidísimo o
+                        Envía (costo adicional).</p>
+                </div>
+
+                <div class="space-y-2">
+                    <i class="fas fa-handshake text-2xl text-red-500"></i>
+                    <h3 class="font-rave font-bold text-base uppercase text-white">Entrega en el Rave</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Recoge tu pedido sin costo de envío directamente en
+                        el stand de la Lunada Vol. 5.</p>
+                </div>
+
+                <div class="space-y-2">
+                    <i class="fas fa-shield-halved text-2xl text-yellow-400"></i>
+                    <h3 class="font-rave font-bold text-base uppercase text-white">Pagos Seguros</h3>
+                    <p class="text-xs text-zinc-400 leading-relaxed">Transacciones directas por Nequi, Daviplata o Llave
+                        Bancaria verificada.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER REUTILIZABLE -->
+    <div id="main-footer"></div>
+
+    <!-- SCRIPTS COMPARTIDOS -->
+    <script src="/js/navbar.js"></script>
+    <script src="/js/footer.js"></script>
+
+</body>
+
+</html>
