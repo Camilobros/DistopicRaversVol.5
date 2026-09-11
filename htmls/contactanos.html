@@ -26,34 +26,7 @@
 <body class="bg-grunge min-h-screen text-white selection:bg-yellow-400 selection:text-black">
 
     <!-- NAVBAR -->
-    <header
-        class="w-full bg-black/90 backdrop-blur-md border-b border-yellow-400/30 sticky top-0 z-50 px-4 md:px-8 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <a href="/index.html"
-                class="w-8 h-8 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600]">
-                <i class="fas fa-skull text-sm"></i>
-            </a>
-            <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">DISTOPIC</span>
-        </div>
-
-        <!-- Links de Navegación -->
-        <nav class="hidden md:flex gap-8 text-xs font-rave tracking-widest uppercase font-bold">
-            <a href="/index.html" class="hover:text-yellow-400 transition">Inicio</a>
-            <a href="index.html#eventos" class="hover:text-yellow-400 transition">Evento</a>
-            <a href="index.html#artistas" class="hover:text-yellow-400 transition">Artistas</a>
-            <a href="index.html#tienda" class="hover:text-yellow-400 transition">Tienda</a>
-            <a href="contactanos.html"
-                class="text-yellow-400 border-b-2 border-yellow-400 pb-0.5 glow-yellow">Contactanos</a>
-            <a href="/htmls/quienesSomos.html" class="hover:text-yellow-400 transition">Quienes somos</a>
-        </nav>
-
-        <!-- Botón Móvil -->
-        <div class="flex items-center gap-3">
-            <button class="md:hidden text-yellow-400 text-2xl hover:scale-110 transition">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
+    <div id="main-navbar"></div>
 
     <!-- CONTENEDOR PRINCIPAL -->
     <main class="max-w-5xl mx-auto px-4 py-10 md:py-16">
@@ -269,31 +242,12 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t-2 border-yellow-400 bg-black/95 py-8 px-4 mt-16">
-        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <h5 class="font-graffiti text-3xl text-yellow-400 tracking-wider leading-none">Distopic Ravers</h5>
-                <p class="font-rave text-xs text-zinc-400 tracking-widest uppercase mt-1">Underground Sound & Cyberpunk
-                    Culture</p>
-            </div>
-
-            <div class="text-center md:text-left">
-                <p class="text-[10px] text-zinc-500 uppercase tracking-widest font-rave">Contacto Directo</p>
-                <a href="mailto:info@distopicravers.com" class="text-yellow-400 font-rave font-bold hover:underline">
-                    info@distopicravers.com
-                </a>
-            </div>
-
-            <div class="flex items-center gap-5 text-xl text-yellow-400">
-                <a href="#" class="hover:scale-125 transition"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:scale-125 transition"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" class="hover:scale-125 transition"><i class="fab fa-tiktok"></i></a>
-            </div>
-        </div>
-    </footer>
+    <div id="main-footer"></div>
 
 
+    <script src="/js/navbar.js"></script>
     <script src="/js/contactanos.js"></script>
+    <script src="/js/footer.js"></script>
 
 </body>
 
