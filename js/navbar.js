@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Artistas', url: '/htmls/artistas.html' },
     { name: 'Tienda', url: '/htmls/tienda.html' },
     { name: 'Contactanos', url: '/htmls/contactanos.html' },
-    { name: 'Quienes somos', url: '/htmls/quienesSomos.html' }
+    { name: 'Quienes somos', url: '/htmls/quienesSomos.html' },
+    { name: 'apoyanos', url: '/htmls/apoyanos.html'}
   ];
 
   const currentPath = window.location.pathname;
