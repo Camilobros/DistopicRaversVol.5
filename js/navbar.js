@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="/index.html" class="w-8 h-8 rounded-full border-2 border-yellow-400 flex items-center justify-center text-yellow-400 shadow-[0_0_8px_#FFE600] hover:scale-105 transition">
           <i class="fas fa-skull text-sm"></i>
         </a>
-        <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">DISTOPIC</span>
+        <span class="font-rave text-xl font-bold tracking-widest text-yellow-400">LUNADA FREE RAVE</span>
       </div>
 
       <!-- 2. Links de Navegación centrados -->
