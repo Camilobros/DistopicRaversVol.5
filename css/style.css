@@ -80,3 +80,112 @@
   animation: neon-flicker 2.5s infinite;
   display: inline-block;
 }
+
+
+
+/* =========================================
+   EFECTO DE FUEGO / LLAMAS (PRÓXIMO ENCUENTRO)
+   ========================================= */
+@keyframes flameDanceBack {
+  0% {
+    background-position: 0px bottom;
+    transform: scaleY(1) translateY(0) skewX(-1.5deg);
+    filter: drop-shadow(0 -4px 8px rgba(239, 68, 68, 0.85)) brightness(1);
+  }
+  50% {
+    background-position: 35px bottom;
+    transform: scaleY(1.22) translateY(-3px) skewX(2deg);
+    filter: drop-shadow(0 -7px 14px rgba(255, 68, 0, 0.95)) brightness(1.2);
+  }
+  100% {
+    background-position: 70px bottom;
+    transform: scaleY(0.96) translateY(0) skewX(-1.5deg);
+    filter: drop-shadow(0 -4px 8px rgba(239, 68, 68, 0.85)) brightness(1);
+  }
+}
+
+/* 2. Animación de la capa frontal (llamas amarillas y núcleo ardiente) */
+@keyframes flameDanceFront {
+  0% {
+    background-position: 0px bottom;
+    transform: scaleY(0.95) skewX(2deg);
+    filter: drop-shadow(0 -2px 6px rgba(255, 230, 0, 0.9));
+  }
+  50% {
+    background-position: -30px bottom;
+    transform: scaleY(1.18) translateY(-2px) skewX(-2.5deg);
+    filter: drop-shadow(0 -5px 10px rgba(255, 170, 0, 1));
+  }
+  100% {
+    background-position: -60px bottom;
+    transform: scaleY(0.95) skewX(2deg);
+    filter: drop-shadow(0 -2px 6px rgba(255, 230, 0, 0.9));
+  }
+}
+
+/* 3. Vibración de calor en la base del texto */
+@keyframes heatPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 115, 0, 0.7), 0 0 20px rgba(220, 38, 38, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(255, 230, 0, 0.9), 0 0 28px rgba(239, 68, 68, 0.8);
+  }
+}
+
+/* 4. Estilos de la etiqueta */
+.badge-flame {
+  position: relative;
+  display: inline-block;
+  overflow: visible;
+  z-index: 10;
+  
+  /* Núcleo ardiente de la pastilla */
+  background: linear-gradient(180deg, #ffe600 0%, #ff5722 55%, #991b1b 100%);
+  color: #050505 !important;
+  font-weight: 900;
+  border: 1px solid #ffe600;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  animation: heatPulse 2.8s infinite ease-in-out;
+}
+
+/* CAPA TRASERA: Lenguas afiladas de fuego rojo/naranja */
+.badge-flame::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  right: -8px;
+  bottom: -28%;
+  height: 40px;
+  pointer-events: none;
+  z-index: -2;
+  border-radius: 50px;
+  
+  /* SVG de franja continua de fuego con silueta puntiaguda */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 50' preserveAspectRatio='none'%3E%3Cpath fill='%23dc2626' d='M0,50 L0,30 C5,20 10,10 15,2 C17,14 22,25 25,28 C28,18 35,5 42,0 C42,12 45,22 48,25 C52,15 60,8 68,4 C68,16 70,25 74,28 C78,16 88,6 95,2 C95,14 98,22 102,25 C108,12 118,8 125,0 C126,14 130,24 134,26 C138,15 145,8 152,4 C153,16 156,26 160,30 L160,50 Z'/%3E%3Cpath fill='%23ea580c' d='M0,50 L0,36 C5,26 10,18 15,10 C17,20 22,28 25,32 C29,24 35,14 42,8 C42,18 45,26 48,30 C52,22 60,16 68,12 C68,22 70,29 74,32 C78,22 88,14 95,10 C95,20 98,26 102,30 C108,18 118,16 125,8 C126,20 130,28 134,31 C138,22 145,16 152,12 C153,22 156,30 160,36 L160,50 Z'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 80px 100%;
+  transform-origin: bottom center;
+  animation: flameDanceBack 2.8s infinite linear;
+}
+
+/* CAPA DELANTERA: Lenguas internas de fuego amarillo brillante */
+.badge-flame::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: -24%;
+  height: 25px;
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 20px;
+  
+  /* SVG de llamas amarillas intensas que contrastan sobre el rojo */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 50' preserveAspectRatio='none'%3E%3Cpath fill='%23facc15' d='M0,50 L0,40 C6,30 11,22 16,14 C18,24 22,32 26,35 C30,26 36,18 43,12 C43,22 46,29 49,33 C53,24 61,18 69,14 C69,24 71,31 75,34 C79,24 89,16 96,12 C96,22 99,28 103,32 C109,20 119,18 126,12 C127,22 131,30 135,33 C139,24 146,18 153,14 C154,24 157,32 160,40 L160,50 Z'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 65px 100%;
+  transform-origin: bottom center;
+  animation: flameDanceFront 2.8s infinite linear;
+  opacity: 0.95;
+}
