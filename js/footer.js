@@ -26,14 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
           <a href="https://www.instagram.com/raversdistopic/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:scale-125 transition">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://x.com/tu_usuario" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:scale-125 transition">
-            <i class="fab fa-x-twitter"></i>
+          <a href="https://www.facebook.com/profile.php?id=100092391942936&rdid=wL4yeO3El6n2VFxS&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DeV9tKVK6%2F#" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:scale-125 transition">
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="https://www.tiktok.com/@tu_usuario" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:scale-125 transition">
             <i class="fab fa-tiktok"></i>
-          </a>
-          <a href="https://www.youtube.com/@tu_canal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:scale-125 transition">
-            <i class="fab fa-youtube"></i>
           </a>
         </div>
 
