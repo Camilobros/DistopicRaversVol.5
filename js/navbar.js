@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: 'Inicio', url: '/index.html' },
     { name: 'Eventos', url: '/htmls/eventos.html' },
     { name: 'Artistas', url: '/htmls/artistas.html' },
-    { name: 'Tienda', url: '/htmls/tienda.html' },
+    //{ name: 'Tienda', url: '/htmls/tienda.html' },
     { name: 'Contactanos', url: '/htmls/contactanos.html' },
     { name: 'Quienes somos', url: '/htmls/quienesSomos.html' },
     { name: 'Apóyanos', url: '/htmls/apoyanos.html' }
