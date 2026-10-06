@@ -2,7 +2,7 @@
 const playlist = [
     {
         title: "house track 1",
-        src: "musica/cancionhouse.mp3"
+        src: "https://files.catbox.moe/zjxo47.mp3"
     },
     {
         title: "Industrial Kick Assault - Drum Enigma",
