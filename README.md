@@ -7,7 +7,7 @@
 ## 🔗 Demo en Producción
 
 Puedes explorar el sitio web desplegado en el siguiente enlace:
-👉 **[https://distopic-ravers.vercel.app](https://distopic-ravers-rave.infinityfreeapp.com/?i=1)**
+👉 **[https://distopic-ravers-rave.infinityfreeapp.com/?i=1](https://distopic-ravers-rave.infinityfreeapp.com/?i=1)**
 
 ---
 
