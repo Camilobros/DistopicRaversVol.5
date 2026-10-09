@@ -1,16 +1,16 @@
 // 1. Lista de canciones (Cambia estos nombres por los de tus archivos en la carpeta musica/)
 const playlist = [
     {
-        title: "house track 1",
-        src: "musica/cancionhouse.mp3"
+        title: "køda - fumando marijuana",
+        src: "https://files.catbox.moe/zjxo47.mp3"
     },
     {
-        title: "Industrial Kick Assault - Drum Enigma",
-        src: "musica/track2.mp3"
+        title: "Garden Of Pleasure - Follow The Shockwave ",
+        src: "musica/Follow The Shockwave mp3.mp3"
     },
     {
-        title: "Dark Warehouse Rave - Distopic Set",
-        src: "musica/track3.mp3"
+        title: "Dj Isaac - Bad Dreams",
+        src: "musica/Dj Isaac - Bad Dreams.mp3"
     }
 ];
 

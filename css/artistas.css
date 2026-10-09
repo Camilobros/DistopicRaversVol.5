@@ -79,3 +79,32 @@ body {
     border-width: 1px;
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+/* Fotografías de artistas */
+.dj-photo {
+    display: block;
+    object-fit: cover;
+    object-position: center 15%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: saturate(0.85) contrast(1.08);
+}
+
+.dj-card:hover .dj-photo {
+    transform: scale(1.05);
+    filter: saturate(1.1) contrast(1.1);
+}
+/* Efectos para las fotos de artistas */
+.dj-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    transition: transform 0.5s ease, filter 0.5s ease;
+    filter: saturate(0.85) contrast(1.08);
+}
+
+.dj-card:hover .dj-photo {
+    transform: scale(1.05);
+    filter: saturate(1.1) contrast(1.1);
+}

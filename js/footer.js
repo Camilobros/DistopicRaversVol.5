@@ -23,17 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- Redes Sociales -->
         <div class="flex items-center gap-5 text-xl text-yellow-400">
-          <a href="https://www.instagram.com/raversdistopic/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:scale-125 transition">
+          <a href="https://www.instagram.com/lunadafreerave/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:scale-125 transition">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://x.com/tu_usuario" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:scale-125 transition">
-            <i class="fab fa-x-twitter"></i>
+          <a href="https://www.facebook.com/people/Lunada-Free-Rave/61594160639203/" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:scale-125 transition">
+            <i class="fa-brands fa-facebook"></i>
           </a>
-          <a href="https://www.tiktok.com/@tu_usuario" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:scale-125 transition">
+          <a href="https://www.tiktok.com/@lunadafreerave" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:scale-125 transition">
             <i class="fab fa-tiktok"></i>
-          </a>
-          <a href="https://www.youtube.com/@tu_canal" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:scale-125 transition">
-            <i class="fab fa-youtube"></i>
           </a>
         </div>
 
